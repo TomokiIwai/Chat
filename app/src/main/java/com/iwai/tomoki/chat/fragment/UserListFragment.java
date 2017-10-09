@@ -213,7 +213,11 @@ public class UserListFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        loadUserList();
+        if (mCurrentPageNumber == 0) {
+            loadUserList();
+        } else {
+            mDataLoadedNotification.onNext(new RandomUserResponse());
+        }
     }
 
     /**
