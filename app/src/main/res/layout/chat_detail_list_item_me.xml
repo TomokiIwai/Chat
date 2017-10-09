@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/wide_content"
+    android:gravity="top|end"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/body"
+        style="@style/wrap_content"
+        android:layout_marginStart="40dp"
+        android:autoLink="web"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        tools:text="ここに、ユーザーの発言。" />
+
+    <com.iwai.tomoki.chat.view.Triangle
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        app:direction="right" />
+
+</android.support.v7.widget.LinearLayoutCompat>

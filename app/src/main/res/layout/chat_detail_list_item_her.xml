@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/wide_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_picture"
+        style="@style/wrap_content"
+        android:minHeight="44dp"
+        android:minWidth="44dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <com.iwai.tomoki.chat.view.Triangle
+        android:layout_width="8dp"
+        android:layout_height="16dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/body"
+        style="@style/wrap_content"
+        android:layout_marginEnd="40dp"
+        android:autoLink="web"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        tools:text="ここは、相手の人が発言したメッセージを表示する領域です。" />
+
+</android.support.v7.widget.LinearLayoutCompat>

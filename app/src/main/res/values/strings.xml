@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Chat</string>
+
+    <string name="input_message">メッセージを入力</string>
+    <string name="no_user">ユーザー情報が存在しません。</string>
+
+    <string name="repl_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+</resources>
