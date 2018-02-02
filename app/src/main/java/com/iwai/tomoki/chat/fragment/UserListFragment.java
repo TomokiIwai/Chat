@@ -317,7 +317,9 @@ public class UserListFragment extends Fragment {
      * ユーザーリストをロードします。
      */
     private void loadUserList() {
-        RandomUserApi.get().list(++mCurrentPageNumber)
+        mCurrentPageNumber = mCurrentPageNumber + 1;
+
+        RandomUserApi.get().list(mCurrentPageNumber)
                 .onErrorReturnItem(new RandomUserResponse())
                 .subscribeOn(Schedulers.from(ChatApplication.getInstance().getThreadPoolExecutor()))
                 .observeOn(AndroidSchedulers.mainThread())
